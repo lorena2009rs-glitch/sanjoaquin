@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page SJ en Acción</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #fafcf9;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4bab07;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #4bab07;
+    }
+
+    /* Hero */
+    #hero {
+      padding-top: 1rem;
+      min-height: 70vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/portada.jpeg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+      padding: 1rem;
+      text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    }
+
+    #hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-button {
+      background-color: aliceblue;
+      color: #000;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #ddd;
+    }
+
+    /* Sección de propiedades */
+    #propiedades {
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    #propiedades h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .propiedades-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .propiedades-card {
+      background: #fafafa;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* 🔹 Todas las imágenes con mismo tamaño (como Intercolegiados) */
+    .propiedades-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .propiedades-card .cta-button {
+      display: inline-block;
+      margin: 1rem auto;
+    }
+
+    /* Redes sociales */
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .social-buttons button {
+      background-color: #4bab07;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .social-buttons button:hover {
+      background-color: #3a9a06;
+    }
+
+    /* Footer */
+    footer {
+      background: #4bab07;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+
+  <script>
+    // JS simple para navegación suave
+    function scrollToEventos() {
+      document.getElementById('propiedades').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">SJ en acción</div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#propiedades">Eventos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="hero">
+      <h1>SJ en acción</h1>
+      <p>"Estudia con propósito y vive con pasión"</p>
+      <button class="cta-button" onclick="scrollToEventos()">Ver eventos</button>
+    </section>
+
+    <!-- Eventos -->
+    <section id="propiedades">
+      <h2>Eventos destacados</h2>
+      <div class="propiedades-grid">
+
+        <div class="propiedades-card">
+          <img src="img/reinadosanjoanero.jpeg" alt="Reinado Nacional del Sanjuanero">
+          <h3>Reinado del Sanjuanero</h3>
+          <!-- Botón enlazado a la página sanjoanero.html -->
+          <a href="sanjoanero.html" class="cta-button">Ver detalles</a>
+        </div>
+
+        <div class="propiedades-card">
+          <img src="img/reinadodelreciclaje.jpeg" alt="Reinado del Reciclaje">
+          <h3>Reinado del Reciclaje</h3>
+          <a href="reciclaje.html" class="cta-button">Ver detalles</a>
+        </div>
+
+        <div class="propiedades-card">
+          <img src="img/intercursos.jpeg" alt="Intercolegiados">
+          <h3>Intercolegiados</h3>
+          <a href="intercursos.html" class="cta-button">Ver detalles</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Redes Sociales -->
+    <div class="social-buttons">
+      <button onclick="window.open('https://www.facebook.com/share/17GuGXXkQm/','_blank')">Facebook</button>
+      <button onclick="window.open('https://www.instagram.com/sj202529?igsh=Z3N2OHo4bzV4eHlx','_blank')">Instagram</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <p>&copy; 2025 SJ en acción — Estudia con propósito y vive con pasión</p>
+  </footer>
+</body>
+</html>
