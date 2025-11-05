@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reinado del reciclaje- SJ en acción</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #fafcf9;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4bab07;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #4bab07;
+    }
+
+    /* Contenido principal */
+    .reinado {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .columna {
+      flex: 1;
+    }
+
+    .columna.izquierda img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .columna.derecha h2 {
+      margin-bottom: 1rem;
+      color: #4bab07;
+    }
+
+    .columna.derecha h3 {
+      margin: 1.5rem 0 0.5rem;
+      color: #333;
+    }
+
+    .columna.derecha ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+
+    .columna.derecha li {
+      margin-bottom: 0.5rem;
+    }
+
+    .columna.derecha p {
+      margin-bottom: 1rem;
+    }
+
+    /* Botón de regreso */
+    .back-button {
+      display: inline-block;
+      background-color: #4bab07;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #3a9a06;
+    }
+
+    /* Sección de galería */
+    .galeria {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .galeria h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #4bab07;
+    }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .galeria-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .galeria-item img:hover {
+      transform: scale(1.03);
+    }
+
+    /* Redes sociales */
+    .social-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .social-buttons button {
+      background-color: #4bab07;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .social-buttons button:hover {
+      background-color: #3a9a06;
+    }
+
+    /* Footer */
+    footer {
+      background: #4bab07;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* Estilos responsive */
+    @media (max-width: 768px) {
+      .reinado {
+        flex-direction: column;
+      }
+      
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      
+      .nav-links {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Encabezado -->
+  <header>
+    <nav>
+      <div class="logo">SJ en acción</div>
+      <ul class="nav-links">
+        <li><a href="index(1).html" >Inicio</a></li>
+        <li><a href="index(1).html"#propiedades>Eventos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <section class="reinado">
+    <div class="columna izquierda">
+      <img src="img/reinadodelreciclaje.jpeg" alt="Reinado del Reciclaje">
+    </div>
+
+    <div class="columna derecha">
+      <h2>Reinado del Reciclaje</h2>
+      <p>
+       El Reinado del Reciclaje es una iniciativa institucional que combina la creatividad, la cultura y la conciencia ambiental en un solo evento. A través de desfiles, muestras artísticas y la creación de trajes elaborados con materiales reutilizables, nuestra comunidad educativa celebra el compromiso con el planeta y fomenta hábitos sostenibles en estudiantes y familias.
+      </p>
+
+      <h3>Objetivos del evento</h3>
+      <ul>
+        <li>Promover la cultura del reciclaje dentro y fuera de la institución.</li>
+        <li>Fomentar la creatividad y la innovación en el diseño de trajes y presentaciones.</li>
+        <li>Desarrollar valores como la responsabilidad ambiental, el respeto y el trabajo en equipo.</li>
+        <li>Sensibilizar a la comunidad sobre la importancia de reducir, reutilizar y reciclar.</li>
+      </ul>
+
+      <h3>Impacto en la comunidad</h3>
+      <p>
+       El reinado no es solo una pasarela de creatividad, sino un proyecto pedagógico que fortalece la formación integral de los estudiantes. Cada edición deja una huella en la comunidad al inspirar prácticas más sostenibles, estimular la conciencia ecológica y motivar la participación activa en el cuidado del entorno.
+      </p>
+
+      <h3>Participación estudiantil</h3>
+      <p>
+       Los estudiantes son los protagonistas de este evento, presentando trajes innovadores confeccionados a partir de papel, cartón, botellas plásticas, discos y otros materiales reciclables. Estas creaciones son reflejo del ingenio juvenil y del compromiso con la protección ambiental.
+      </p>
+
+      <p>Con el Reinado del Reciclaje, nuestra institución reafirma su compromiso con la educación ambiental y la formación de ciudadanos conscientes y responsables, capaces de generar un cambio positivo en la sociedad.</p>
+
+      <a href="index(1).html" class="back-button">Volver a eventos</a>
+    </div>
+  </section>
+
+ 
+
+  <!-- Redes Sociales -->
+  <div class="social-buttons">
+    <button onclick="window.open('https://www.facebook.com/share/17GuGXXkQm/','_blank')">Facebook</button>
+    <button onclick="window.open('https://www.instagram.com/sj202529?igsh=Z3N2OHo4bzV4eHlx','_blank')">Instagram</button>
+  </div>
+
+  <!-- Footer -->
+  <footer id="contacto">
+    <p>&copy; 2025 SJ en acción — Estudia con propósito y vive con pasión</p>
+  </footer>
+</body>
+</html>
